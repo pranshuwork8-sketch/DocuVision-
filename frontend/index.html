@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DocuVision</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📘 DocuVision</h1>
+
+<input type="file" id="file"><br><br>
+
+<button onclick="uploadPDF()">Upload PDF</button>
+<button onclick="uploadImage()">Upload Image</button>
+
+<hr>
+
+<select id="level">
+  <option value="short">Short Summary</option>
+  <option value="medium">Medium Summary</option>
+  <option value="detailed">Detailed Summary</option>
+</select>
+<button onclick="getSummary()">Get Summary</button>
+
+<p id="summary"></p>
+
+<hr>
+
+<input id="question" placeholder="Ask a question">
+<button onclick="ask()">Ask</button>
+<p id="answer"></p>
+
+<hr>
+
+<button onclick="getChart()">Show Word Chart</button><br>
+<img id="chart">
+
+<script src="script.js"></script>
+</body>
+</html>
